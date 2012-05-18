@@ -52,3 +52,7 @@
 
 ;; always show column info
 (column-number-mode)
+
+;;; Clojure mode
+(add-to-list 'auto-mode-alist '("\.clj$" . clojure-mode))
+
