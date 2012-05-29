@@ -15,24 +15,10 @@
 ; (menu-bar-mode)
 (global-linum-mode)
 
-;; Color theme -- 2011.11.26
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (wheatgrass))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
 ;; Groovy mode -- 2011.11.30
 ;; see http://groovy.codehaus.org/Emacs+Groovy+Mode
-
 (add-to-list 'load-path "~/.emacs.d/emacs-groovy-mode_2011-06-29/")
+
 ;;; turn on syntax highlighting
 (global-font-lock-mode 1)
 
@@ -56,3 +42,9 @@
 ;;; Clojure mode
 (add-to-list 'auto-mode-alist '("\.clj$" . clojure-mode))
 
+;; 2012.05.29
+;; RailsCasts theme from https://github.com/olegshaldybin/color-theme-railscasts
+(require 'color-theme)
+;;(color-theme-initialize) ; throws an error on this version of color-theme
+(load-file "~/.emacs.d/site-lisp/themes/color-theme-railscasts.el")
+(color-theme-railscasts)
