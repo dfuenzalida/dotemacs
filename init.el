@@ -48,3 +48,7 @@
 ;;(color-theme-initialize) ; throws an error on this version of color-theme
 (load-file "~/.emacs.d/site-lisp/themes/color-theme-railscasts.el")
 (color-theme-railscasts)
+
+;; 2012.07.17
+;; bind M-j to delete-indentation (similar to 'J' in vim, to join lines)
+(global-set-key (kbd "M-j") 'delete-indentation)
