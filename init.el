@@ -19,6 +19,7 @@
 (global-linum-mode)
 (global-font-lock-mode 1)
 (column-number-mode)
+(global-whitespace-mode)
 
 ;; 2012.07.17
 ;; bind M-j to delete-indentation (similar to 'J' in vim, to join lines)
@@ -65,3 +66,8 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Theme using color-theme-6.6.1 copied from
+;; https://github.com/raykin/emacs-24/tree/master/elpa/color-theme-6.6.1
+(require 'color-theme)
+(load-file "~/.emacs.d/elpa/color-theme-railscasts-0.0.2/color-theme-railscasts.el")
+(color-theme-railscasts)
