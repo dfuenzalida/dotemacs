@@ -76,7 +76,7 @@
      (font-lock-variable-name-face ((t (:foreground "LightSteelBlue"))))
      (font-lock-warning-face ((t (:foreground "Pink"))))
      (paren-face-match-light ((t (:foreground "#FFC66D" :background "#555577"))))
-     (highlight ((t (:background "darkolivegreen"))))
+     (highlight ((t (:background "#131313")))) ;; was "darkolivegreen"
      (italic ((t (:italic t))))
      (modeline ((t (:background "#A5BAF1" :foreground "black"))))
      (modeline-buffer-id ((t (:background "#A5BAF1" :foreground 

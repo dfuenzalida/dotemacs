@@ -21,6 +21,10 @@
 (column-number-mode)
 (global-whitespace-mode)
 
+;; 2013.02.24
+(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
+
 ;; 2012.07.17
 ;; bind M-j to delete-indentation (similar to 'J' in vim, to join lines)
 (global-set-key (kbd "M-j") 'delete-indentation)
@@ -51,6 +55,9 @@
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
+
+;; Highlight current line
+(global-hl-line-mode 1)
 
 ;; ido-mode is like magic pixie dust!
 (ido-mode t)
