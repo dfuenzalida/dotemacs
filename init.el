@@ -91,3 +91,10 @@
           '(lambda ()
              (require 'groovy-electric)
              (groovy-electric-mode)))
+
+;; Auto Complete 1.3.1 - 2013.06.18
+(add-to-list 'load-path "~/.emacs.d/elpa/auto-complete-1.3.1/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories
+             "~/.emacs.d/elpa/auto-complete-1.3.1//ac-dict")
+(ac-config-default)
