@@ -9,7 +9,8 @@
 (package-initialize)
 
 ;; Default font -- 2011.11.23
-(set-default-font "Liberation Mono 9")
+(set-default-font "Liberation Mono 10")
+;; (set-default-font "Ubuntu Mono 11")
 
 ;; Scrollbar + Line numbers + Menu Bar -- 2011.11.24
 (scroll-bar-mode 1)
@@ -75,9 +76,13 @@
 
 ;; Theme using color-theme-6.6.1 copied from
 ;; https://github.com/raykin/emacs-24/tree/master/elpa/color-theme-6.6.1
+
+;; (require 'color-theme)
+;; (load-file "~/.emacs.d/elpa/color-theme-railscasts-0.0.2/color-theme-railscasts.el")
+;; (color-theme-railscasts)
+
 (require 'color-theme)
-(load-file "~/.emacs.d/elpa/color-theme-railscasts-0.0.2/color-theme-railscasts.el")
-(color-theme-railscasts)
+(load-file "~/.emacs.d/elpa/monokai-theme-20140310.1330/monokai-theme.el")
 
 ;; Groovy mode - See http://groovy.codehaus.org/Emacs+Groovy+Mode
 
@@ -98,3 +103,15 @@
 (add-to-list 'ac-dictionary-directories
              "~/.emacs.d/elpa/auto-complete-1.3.1//ac-dict")
 (ac-config-default)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
